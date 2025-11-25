@@ -13,9 +13,6 @@ export async function POST(req) {
       );
     }
 
-    // Create a transporter using environment variables
-    // You need to set EMAIL_USER and EMAIL_PASS in your .env file
-    // For Gmail, use an App Password, not your regular password
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -26,7 +23,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Sending to yourself
+      to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `New Message from Portfolio: ${name}`,
       text: `
