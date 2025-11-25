@@ -51,7 +51,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
             <div className="relative h-9 w-19 overflow-hidden">
                <Image
-                src="/images/navlogo.png"
+                src="/images/logo.png"
                 alt="Logo"
                 fill
                 className="object-contain object-left"

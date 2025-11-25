@@ -17,8 +17,46 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Portfolio",
-  description: "Portfolio Website",
+  title: {
+    default: "Nikhil Kole | Full Stack Developer",
+    template: "%s | Nikhil Kole"
+  },
+  description: "Portfolio of Nikhil Kole, a Full Stack Developer and Creative Thinker based in Kolhapur. Specializing in building exceptional digital experiences with Next.js, React, and modern web technologies.",
+  keywords: [
+    "Nikhil Kole",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Web Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Portfolio",
+    "Kolhapur",
+    "Frontend Developer",
+    "Backend Developer"
+  ],
+  authors: [{ name: "Nikhil Kole", url: "https://github.com/Async-NickL" }],
+  creator: "Nikhil Kole",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    title: "Nikhil Kole | Full Stack Developer",
+    description: "Creating digital experiences that matter. Explore my projects, skills, and journey as a developer.",
+    siteName: "Nikhil Kole Portfolio",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/images/favcon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
