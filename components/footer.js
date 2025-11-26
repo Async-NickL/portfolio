@@ -10,9 +10,9 @@ export default function Footer() {
     >
       <div className='relative h-[calc(100vh+450px)] -top-[100vh]'>
         <div className='h-[500px] sticky top-[calc(100vh-500px)]'>
-          <div className="bg-primary h-full w-full flex flex-col justify-between px-10 md:px-20 py-10 text-primary-foreground">
+          <div className="bg-primary h-full w-full flex flex-col justify-start md:justify-between px-10 md:px-20 py-10 text-primary-foreground gap-10 md:gap-0">
             {/* Top Section */}
-            <div className="flex flex-col md:flex-row justify-between items-start w-full mt-10 z-10">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-start w-full mt-10 z-10">
               <div className="hidden md:flex flex-col gap-2">
                 <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">
                     Let&apos;s Work Together
@@ -20,7 +20,7 @@ export default function Footer() {
                 <p className="text-lg opacity-80">Creating digital experiences that matter.</p>
               </div>
               
-              <div className="flex flex-wrap gap-4 md:gap-6 mt-6 md:mt-0 z-50">
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 mt-6 md:mt-0 z-50">
                 {[
                   { name: 'Github', href: 'https://github.com/Async-NickL' },
                   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/nikhil-kole/' },
@@ -48,16 +48,16 @@ export default function Footer() {
                <img 
                 src="/images/me.png" 
                 alt="Me" 
-                className="h-[90%] w-auto object-contain mix-blend-multiply opacity-90"
+                className="h-[50%] md:h-[90%] w-auto object-contain mix-blend-multiply opacity-90"
               />
             </div>
 
             {/* Bottom Section */}
-            <div className="flex flex-col md:flex-row justify-between items-end w-full z-10 relative">
-              <div className="text-sm opacity-60 mt-4 md:mt-0">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-end w-full z-10 relative">
+              <div className="text-[10px] md:text-sm opacity-60 mt-4 md:mt-0 order-2 md:order-1">
                 &copy; {new Date().getFullYear()} Portfolio. All rights reserved.
               </div>
-              <div className="flex gap-6 text-sm text-center font-medium opacity-50">
+              <div className="flex gap-6 text-[10px] md:text-sm text-center font-medium opacity-50 order-1 md:order-2">
                   Crafted with 🤍 using Next.js by Nikhil Kole <br/>
                   ( Built and designed from scratch )
               </div>
